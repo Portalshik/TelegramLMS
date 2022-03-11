@@ -3,7 +3,7 @@ import time
 from termcolor import cprint
 import os
 
-directory = os.path.abspath(__file__)
+directory = os.path.abspath(__file__)[:-7]
 search = list(filter(lambda x: x.endswith('.png'), os.listdir(directory)))[::-1]
 print(search)
 
